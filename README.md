@@ -6,7 +6,7 @@ Run [Apache Guacamole](https://guacamole.apache.org/) with docker containers usi
 
 Clone repository
 ```bash
-git clone https://github.com/reisbel/guacamole-docker-compose.git && cd guacamole-docker-compose
+git clone https://github.com/diceworld/guacamole-docker-compose.git && cd guacamole-docker-compose
 ```
 
 Edit .env, changing the username and password for postgres database.
@@ -16,8 +16,8 @@ vim .env
 
 ```cfg
 //.env
-POSTGRES_USER=new_postgres_username
-POSTGRES_PASSWORD=new_secure_postgres_password
+POSTGRES_USER=[new_postgres_username]
+POSTGRES_PASSWORD=[new_secure_postgres_password]
 ```
 
 Seed postgres database
@@ -30,7 +30,7 @@ Start everything
 docker-compose up -d
 ```
 
-Guacamole is now listening on port 8080
+Guacamole is now listening on port 8080 ([server ip]:8080/guacamole/#/)
 
 default username: guacadmin
 
